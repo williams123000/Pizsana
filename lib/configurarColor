@@ -1,0 +1,34 @@
+#!/bin/ksh
+
+# Esta función establece el color del texto según la opción proporcionada.
+# Si se recibe "reset", se restauran los colores al valor predeterminado.
+# Si la opción no está definida, muestra un mensaje de error.
+
+function configurarColor {
+    opcion="$1"
+    case "$opcion" in
+    reset*) tput sgr0;;
+    textocolor*) tput setaf `obtenerCodigoColor $2`;;
+    fondocolor*) tput setab `obtenerCodigoColor $2`;;
+    negrita*) tput bold ;;
+    debil*) tput dim;;
+    subrayado*) tput smul;;
+    nosubrayado*) tput rmul;;
+    *) print "Opción no definida" ;;
+    esac
+}
+
+# Esta función devuelve el código numérico del color basado en el nombre del color proporcionado.
+function obtenerCodigoColor {
+    color="$1"
+    case "$color" in
+    negro) print "0" ;;
+    rojo) print "1" ;;
+    verde) print "2" ;;
+    amarillo) print "3" ;;
+    azul) print "4" ;;
+    magenta) print "5" ;;
+    cyan) print "6" ;;
+    blanco) print "7" ;;
+    esac
+}
