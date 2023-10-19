@@ -2,7 +2,6 @@
 
 # Williams Chan Pescador
 # Equipo X-Men
-#
 export FPATH="$(pwd)/../lib"
 autoload configurarColor
 autoload Graficos_Pizza
@@ -30,7 +29,7 @@ do
     configurarColor textocolor verde
     echo -e -n "Usuario: "
     read Usuario 
-    tput sgr0  
+    configurarColor reset
     cd ./Login
     . ./Login.ksh
     Buscar_Usuario $Usuario 
@@ -46,8 +45,10 @@ do
             STTY_SAVE=`stty -g`
             stty -echo
             Registrar_Bitacora_Archivo $Estado_Bitacora $Usuario
+            configurarColor textocolor verde
             echo -n "Contraseña: "
             read Password
+            configurarColor reset
             stty $STTY_SAVE
             echo
             cd ./Login
@@ -58,9 +59,11 @@ do
             if [ $Busqueda == "1" ]; then
                 break
             else
+                configurarColor textocolor rojo
                 echo "Contraseña invalida"
                 echo -e -n "Presione Enter para continuar..."
                 read p
+                configurarColor reset
             fi
         done
         break
@@ -81,10 +84,17 @@ Estado_Bitacora=1
 Registrar_Bitacora_Archivo $Estado_Bitacora $Usuario
 echo -e -n "Presione Enter para continuar..."
 read p
+configurarColor reset
 if [ "$Rol" == "Administrador" ]; then
-    
+    configurarColor textocolor magenta
+    configurarColor negrita
     . ./Menu_Admin.ksh $Usuario
+    configurarColor reset
+    
 else
+    configurarColor textocolor cyan
+    configurarColor negrita
     . ./Menu_Usuario.ksh $Usuario
+    configurarColor reset
 
 fi
