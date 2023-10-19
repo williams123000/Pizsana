@@ -1,4 +1,8 @@
 #!/bin/ksh
+
+# Williams Chan Pescador
+# Equipo X-Men
+#
 export FPATH="$(pwd)/../lib"
 autoload configurarColor
 autoload Graficos_Pizza
