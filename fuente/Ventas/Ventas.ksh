@@ -1,4 +1,35 @@
 #!/bin/ksh
+# Williams Chan Pescador 2193076730
+# Equipo X-Men
+# "X-Men: Transformando Código en Realidad, ¡Programamos el Mañana!
+    ##########################################
+    #      Script Del Modulo Ventas          #
+    #           CRUD DE VENTAS               #
+##################################################
+#                 Funciones                      #
+# 1. Crea el csv de ventas con su:               #
+# ID_Venta,ID_Producto,Cantidad,SubTotal,        #
+# Total,Fecha_Hora,ID_Usuario todo va redirigido #
+# al csv respectivo.                             #
+# 2. Registrar en bitacora cada operacion que    #
+# se realice con el id de quien la realiza, que  # 
+# hace en dicha operacion y su estado.           #
+# 3. Desplegado de ventas correspondiente al     #
+# csv que se genero.                             #
+# 4. Cancelar venta el cual es con respecto a su #
+# id, con el cual si se ejecuta, en productos se #
+# le suma el producto que se iva a llevar.       #  
+# 5. Crear Venta el cual se le genera un id en   #
+# automatico tomando su id anterior, al momento  #
+# de realizar se le pregunta la cantidad de pi-  #
+# zzas a llevar y esas mismas se le resta ala    #
+# cantidad que teneemos en producto.             #
+# 6.Enviar Bitacora Ventas el cual es el encar-  #
+# do de mandar un correo con las ventas que se   #
+# hayan generado dentro de nuestro Ventas.csv    #
+##################################################
+
+
 
 function Crear_CVS_Ventas
 {
@@ -25,15 +56,6 @@ function Registrar_Bitacora_Archivo_Ventas
     cd ../Ventas
 }
 
-
-#function Desplegado_Productos
-#{
- #   clear
-  #  pwd
-   # awk 'BEGIN { FS=OFS="," } { print }' Productos.csv
-    #echo "Presione Enter para continuar..."
-    #read p
-#}
 
 function Desplegar_Ventas
 {   

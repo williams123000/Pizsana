@@ -1,5 +1,34 @@
 #!/bin/ksh
 
+# Williams Chan Pescador 2193076730
+# Equipo X-Men
+# "X-Men: Transformando Código en Realidad, ¡Programamos el Mañana!
+    ##########################################
+    #      Script Del Modulo Productos       #
+    #           CRUD DE PRODUCTOS            #
+##################################################
+#                 Funciones                      #
+# 1. Crea el csv de Productos  con su:           #
+# ID,Nombre,Tamaño,Cantidad,Precio               #
+# 2. Registrar en bitacora cada operacion que    #
+# se realice con el id de quien la realiza, que  # 
+# hace en dicha operacion y su estado.           #
+# 3. Actualizar Producto el cual con respecto a  #
+# su id primero analiza si existe o si no, si    #
+# existe te pregunta que deseas actualizar ya    #
+# sea el uNombre,Tamaño,Cantidad o Precio        #
+# Esto solo el el admin podria, el usuario solo  #
+# podria aumentar su cantidad.                   #
+# 4. Eliminar Producto el cual con respecto al   #
+# id verifica si existe y lo elimina.            #
+# 5. Desplegado Productos el cual muestra los    #
+# producto hasta el momento que tienen registra- #
+# dos.                                           #
+# 6. Crear Producto se le genera un id en auto-  #
+# matico y te pregunta su Nombre,Tamaño,Cantidad,#
+# y Precio                                       #
+##################################################
+
 function Crear_CSV_Productos
 {
     clear

@@ -1,7 +1,20 @@
 #!/bin/ksh
 
-# Williams Chan Pescador
+# Williams Chan Pescador 2193076730
 # Equipo X-Men
+# "X-Men: Transformando Código en Realidad, ¡Programamos el Mañana!
+#########################################
+#      Script Del Modulo Principal      #
+# El cual es el encargado de saber si   #
+# el que desea entrar es un usuario o   #
+# Admin. Cada uno tiene su propio menu  #
+# asi tambien como funciones diferen-   #
+# tes dentro.                           #
+#########################################
+# Contiene la funcion para registrar en #
+# bitacora el inicio de sesion          #
+#########################################
+
 export FPATH="$(pwd)/../lib"
 autoload configurarColor
 autoload Graficos_Pizza

@@ -1,4 +1,29 @@
 #!/bin/ksh
+# Williams Chan Pescador 2193076730
+# Equipo X-Men
+# "X-Men: Transformando Código en Realidad, ¡Programamos el Mañana!
+    ##########################################
+    #      Script Del Modulo Bitacora        #
+    #                                        #
+##################################################
+#                 Funciones                      #
+# 1. Crea el csv de Bitacoras con su:            #
+# ID_Bitacoras,ID_Usuario,Modulo,Operacion,      #
+# Estado,Fecha_Hora                              #
+# 2. Registrar en bitacora cada operacion que    #
+# se realice con el id de quien la realiza, que  # 
+# hace en dicha operacion y su estado.           #
+# 3. Visualizar bitacora el cual te muestra las  #
+# operaciones que se han realizado dentro con    #
+# respecto al csv generado. Al igual este manda  #
+# a llamar a otra funcion de enviar bitacora por #
+# email.                                         #
+# 4. Enviar Bitacora Email el cual es el encar-  #
+# gado de mandar toda la bitacora generada por   #
+# correo.                                        #
+##################################################
+
+
 
 function Crear_CSV_Bitacora
 {

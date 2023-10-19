@@ -1,4 +1,32 @@
 #!/bin/ksh
+# Williams Chan Pescador 2193076730
+# Equipo X-Men
+# "X-Men: Transformando Código en Realidad, ¡Programamos el Mañana!
+    ##########################################
+    #      Script Del Modulo Login           #
+    #           CRUD DE USUARIOS             #
+##################################################
+#                 Funciones                      #
+# 1. Crea el csv de Uusarios con su:             #
+# ID,Usuario,Password,Rol.                       #
+# 2. Registrar en bitacora cada operacion que    #
+# se realice con el id de quien la realiza, que  # 
+# hace en dicha operacion y su estado.           #
+# 3. Actualizar Usuario el cual con respecto a   #
+# su id primero analiza si existe o si no, si    #
+# existe te pregunta que deseas actualizar ya    #
+# sea el usuario, password o rol. Esto solo el   #
+# el admin podria, el usuario solo podria su     #
+# password.                                      #
+# 4. Eliminar Usuario el cual con respecto al id #
+# verifica si existe y lo elimina.               #
+# 5. Desplegado Usuario el cual muestra los      #
+# usuarios hasta el momento que tienen registra- #
+# dos.                                           #
+# 6. Crear Usuario se le genera un id en automa- #
+# tico y te pregunta su usuario, password y su   #
+# rol.                                           #
+##################################################
 
 function Crear_CSV_Login
 {

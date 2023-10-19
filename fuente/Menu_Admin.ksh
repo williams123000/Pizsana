@@ -1,4 +1,19 @@
 #!/bin/ksh
+# Williams Chan Pescador 2193076730
+# Equipo X-Men
+# "X-Men: Transformando Código en Realidad, ¡Programamos el Mañana!
+##############################################
+#      Script Del Modulo Menu Admin          #
+# El cual es el encargado de tener las       #
+# funciones adecuadas del administrador      #
+# Ya sea en Usuarios, Producto,Ventas y      #
+# Bitacoras. Cada opcion que se desee hacer  #
+# hacer dentro, se llama al correspondiente  #
+# ksh ya generado con su id de quien esta    #
+# haciendo dicha operacion y tambien se      #
+# se registra en bitacora                    #
+##############################################
+
 
 ID_Usuario=$1
 # Define las opciones del menú
