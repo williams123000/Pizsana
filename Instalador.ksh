@@ -1,4 +1,9 @@
 #!/bin/ksh
+# Williams Chan Pescador 2193076730
+# Equipo X-Men
+# "X-Men: Transformando Código en Realidad, ¡Programamos el Mañana!
+# Simula una barra de progreso y pasa todos los ksh de fuente a bin para que sean ejecutados ahi.
+
 
 # Función para imprimir la barra de progreso
 print_progress() {

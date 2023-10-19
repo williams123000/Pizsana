@@ -1,4 +1,7 @@
 #!/bin/ksh
+# Williams Chan Pescador 2193076730
+# Equipo X-Men
+# "X-Men: Transformando Código en Realidad, ¡Programamos el Mañana!
 
 # Esta función establece el color del texto según la opción proporcionada.
 # Si se recibe "reset", se restauran los colores al valor predeterminado.
